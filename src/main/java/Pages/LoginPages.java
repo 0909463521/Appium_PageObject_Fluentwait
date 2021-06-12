@@ -46,5 +46,7 @@ public class LoginPages extends BaseTest {
         click(btnstandard_);
     }
 
+
+
 }
 

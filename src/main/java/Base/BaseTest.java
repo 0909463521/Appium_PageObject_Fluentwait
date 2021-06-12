@@ -5,18 +5,22 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.screenrecording.CanRecordScreen;
+import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -28,16 +32,60 @@ public class BaseTest {
     InputStream inputMessage;
     TestUtils testUtils;
 
+    protected static String dateTime;
+
     public BaseTest()
     {
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
         System.out.println("bach Map: " + getClass().getSimpleName());
     }
+    public AppiumDriver getDriver() {
+        return driver;
+    }
+    @BeforeMethod
+    public void beforeMethod() {
+        ((CanRecordScreen) getDriver()).startRecordingScreen();
+    }
+
+    //stop video capturing and create *.mp4 file
+    @AfterMethod
+    public synchronized void afterMethod(ITestResult result) throws Exception {
+        String media = ((CanRecordScreen) getDriver()).stopRecordingScreen();
+
+        Map<String, String> params = result.getTestContext().getCurrentXmlTest().getAllParameters();
+        String dirPath = "videos" + File.separator + params.get("platformName") + "_" + params.get("deviceName")
+                + File.separator + getDateTime() + File.separator + result.getTestClass().getRealClass().getSimpleName();
+
+        File videoDir = new File(dirPath);
+
+        synchronized(videoDir){
+            if(!videoDir.exists()) {
+                videoDir.mkdirs();
+            }
+        }
+        FileOutputStream stream = null;
+        try {
+            stream = new FileOutputStream(videoDir + File.separator + result.getName() + ".mp4");
+            stream.write(Base64.decodeBase64(media));
+            stream.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if(stream != null) {
+                stream.close();
+            }
+        }
+    }
     @Parameters({"platformName","platformVersion","deviceName"})
     @BeforeTest
     public void beforeTest(String platformName, String platformVersion , String deviceName ) throws IOException {
         try{
+            //init test utils
+            testUtils = new TestUtils();
+            //Date Time
 
+            dateTime = testUtils.getDatetime();
             props = new Properties();
             String Stringproperties = "config.properties";
             String messageFileName = "strings/messageandexpectedValue.xml";
@@ -46,7 +94,7 @@ public class BaseTest {
             props.load(inputStream);
 
             inputMessage = getClass().getClassLoader().getResourceAsStream(messageFileName);
-            testUtils = new TestUtils();
+
             strings = testUtils.parseStringXML(inputMessage);
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -111,6 +159,10 @@ public class BaseTest {
         waitForVisibility(element);
         return element.getAttribute(attribute);
     }
+    public String getDateTime() {
+        return dateTime;
+    }
+
 
     @AfterTest
     public void afterTest()

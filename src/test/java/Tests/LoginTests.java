@@ -60,6 +60,16 @@ public class LoginTests extends BaseTest {
 
     }
     @Test
+    public void invalidUserName() {
+        loginPages.enterUserName(LoginUsers.getJSONObject("invalidUser").getString("username"));
+        loginPages.enterPassword(LoginUsers.getJSONObject("invalidUser").getString("password"));
+        loginPages.pressLoginBtn();
+
+
+
+
+    }
+    @Test
     public void sucessfulLogin()
     {
         try{
