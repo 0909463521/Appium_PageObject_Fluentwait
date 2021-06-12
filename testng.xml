@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" parallel="false">
+    <listeners>
+        <listener class-name="Listener.TestListener"/>
+    </listeners>
+    <test name="Test">
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="*"/>
+        <parameter name="deviceName" value="Any device name"/>
+        <classes>
+            <class name="Tests.LoginTests"/>
+        </classes>
+    </test>
+</suite>
