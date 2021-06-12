@@ -3,32 +3,14 @@ package Tests;
 import Base.BaseTest;
 import Pages.LoginPages;
 import Pages.ProductsPage;
-import Utils.TestUtils;
-import com.google.gson.JsonObject;
-import com.google.gson.stream.JsonToken;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.glassfish.grizzly.compression.lzma.impl.Base;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.InputStream;
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class LoginTests extends BaseTest {
     LoginPages loginPages;
@@ -40,8 +22,8 @@ public class LoginTests extends BaseTest {
     {
 
         try {
-            String dataFileName = "/Users/bachvu/Desktop/PageObject/src/main/resources/data/loginUsers.json";
-            datais = getClass().getClassLoader().getResourceAsStream("loginUsers.json");
+            String dataFileName = "data/loginUsers.json";
+            datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
 
             JSONTokener jsonTokener = new JSONTokener(datais);
             LoginUsers = new JSONObject(jsonTokener);

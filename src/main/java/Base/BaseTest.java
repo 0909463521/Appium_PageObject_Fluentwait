@@ -40,7 +40,7 @@ public class BaseTest {
 
             props = new Properties();
             String Stringproperties = "config.properties";
-            String messageFileName = "messageandexpectedValue.xml";
+            String messageFileName = "strings/messageandexpectedValue.xml";
 
             inputStream = getClass().getClassLoader().getResourceAsStream(Stringproperties);
             props.load(inputStream);
@@ -66,7 +66,7 @@ public class BaseTest {
             capabilities.setCapability("appPackage", props.getProperty("AndroidappPackage"));
             capabilities.setCapability("appActivity", props.getProperty("AndroidappActivity"));
             String androidAppUrl = getClass().getResource(props.getProperty("Application")).getFile();
-            capabilities.setCapability("app", props.getProperty("Application"));
+            capabilities.setCapability("app", androidAppUrl);
 
             System.out.println(props.getProperty("Application"));
 
