@@ -223,12 +223,12 @@ public class BaseTest {
                         break;
                     case "iOS":
                         desiredCapabilities.setCapability("automationName", props.getProperty("iOSAutomationName"));
-                        String iOSAppUrl = getClass().getResource(props.getProperty("iOSAppLocation")).getFile();
+                        String iOSAppUrl = getClass().getResource(props.getProperty("IOSapplication")).getFile();
 
-                        desiredCapabilities.setCapability("bundleId", props.getProperty("iOSBundleId"));
+//                        desiredCapabilities.setCapability("bundleId", props.getProperty("iOSBundleId"));
                         desiredCapabilities.setCapability("wdaLocalPort", wdaLocalPort);
                         desiredCapabilities.setCapability("webkitDebugProxyPort", webkitDebugProxyPort);
-                        desiredCapabilities.setCapability("app", iOSAppUrl);
+//                        desiredCapabilities.setCapability("app", iOSAppUrl);
 
                         driver = new IOSDriver(url, desiredCapabilities);
                         break;
