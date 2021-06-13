@@ -3,10 +3,12 @@
     <listeners>
         <listener class-name="Listener.TestListener"/>
     </listeners>
-    <test name="Test">
-        <parameter name="platformName" value="Android"/>
-        <parameter name="platformVersion" value="*"/>
-        <parameter name="deviceName" value="Any device name"/>
+    <test name="ANDROID BACH">
+        <parameter name="platformName" value="Android" />
+        <parameter name="udid" value="R58MB0T56ZA" />
+        <parameter name="deviceName" value="Any device name" />
+        <parameter name="systemPort" value="10000" />
+        <parameter name="chromeDriverPort" value="11000" />
         <classes>
             <class name="Tests.LoginTests"/>
         </classes>

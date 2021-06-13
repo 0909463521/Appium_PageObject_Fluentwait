@@ -16,26 +16,11 @@ public class LoginTests extends BaseTest {
     LoginPages loginPages;
     ProductsPage productsPage;
     InputStream datais;
-    JSONObject LoginUsers;
+
     @BeforeClass
     public void beforeClass()
     {
 
-        try {
-            String dataFileName = "data/loginUsers.json";
-            datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
-
-            JSONTokener jsonTokener = new JSONTokener(datais);
-            LoginUsers = new JSONObject(jsonTokener);
-
-
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }finally {
-
-        }
     }
     @BeforeMethod
     public void beforeMethod(Method method)
@@ -61,8 +46,8 @@ public class LoginTests extends BaseTest {
     }
     @Test
     public void invalidUserName() {
-        loginPages.enterUserName(LoginUsers.getJSONObject("invalidUser").getString("username"));
-        loginPages.enterPassword(LoginUsers.getJSONObject("invalidUser").getString("password"));
+        loginPages.enterUserName(getDataBach().getJSONObject("invalidUser").getString("username"));
+        loginPages.enterPassword(getDataBach().getJSONObject("invalidUser").getString("password"));
         loginPages.pressLoginBtn();
 
 
@@ -73,14 +58,14 @@ public class LoginTests extends BaseTest {
     public void sucessfulLogin()
     {
         try{
-            loginPages.enterUserName(LoginUsers.getJSONObject("validUser").getString("username"));
-            loginPages.enterPassword(LoginUsers.getJSONObject("validUser").getString("password"));
+            loginPages.enterUserName(getDataBach().getJSONObject("validUser").getString("username"));
+            loginPages.enterPassword(getDataBach().getJSONObject("validUser").getString("password"));
             loginPages.pressStandard_user();
             productsPage = loginPages.pressLoginBtn();
 
-            System.out.println(strings.get("success"));
+            System.out.println(getStrings().get("success"));
             String actualProductTitle = productsPage.getTitle();
-            String expectedProductTitle = strings.get("product_title");
+            String expectedProductTitle = getStrings().get("product_title");
 
             Assert.assertEquals(actualProductTitle,expectedProductTitle);
         }
