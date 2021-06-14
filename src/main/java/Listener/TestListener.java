@@ -25,12 +25,14 @@ public class TestListener implements ITestListener {// interface
     BaseTest base = new BaseTest();
     @Override
     public void onTestStart(ITestResult iTestResult) {
-
+        ExtentReport.startTest(iTestResult.getName(), iTestResult.getMethod().getDescription())
+                .assignCategory(base.getPlatform() + "_" + base.getDeviceName())
+                .assignAuthor("BACH");
     }
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-        ExtentReport.getTest().log(Status.PASS, "Test Passed");
+
 
         File file = base.getDriver().getScreenshotAs(OutputType.FILE);
 
@@ -54,16 +56,13 @@ public class TestListener implements ITestListener {// interface
         String completeImagePath = System.getProperty("user.dir") + File.separator + imagePath;
 
 
-        ExtentReport.getTest().fail("Test Failed",
-                MediaEntityBuilder.createScreenCaptureFromPath(completeImagePath).build());
-        ExtentReport.getTest().fail("Test Failed",
-                MediaEntityBuilder.createScreenCaptureFromBase64String(new String(encoded, StandardCharsets.US_ASCII)).build());
-        ExtentReport.getTest().fail(iTestResult.getThrowable());
+
 
         try {
             FileUtils.copyFile(file, new File(imagePath));
             Reporter.log("This is the sample screenshot");
             Reporter.log("<a href='"+ completeImagePath + "'> <img src='"+ completeImagePath + "' height='400' width='400'/> </a>");
+            ExtentReport.getTest().log(Status.PASS, "Test Passed");
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

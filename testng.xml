@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name="Suite" parallel="tests">
+<suite name="Suite" parallel="false">
     <listeners>
         <listener class-name="Listener.TestListener"/>
     </listeners>
@@ -13,19 +13,19 @@
             <class name="Tests.LoginTests"/>
         </classes>
     </test>
-    <test name="iPhonexs">
-        <listeners>
-            <listener class-name="Listener.TestListener" />
-        </listeners>
-        <parameter name="platformName" value="iOS" />
-        <parameter name="udid" value="d49d0add0cc8f3105fd2d50b0a9806ac487ade89" />
-        <parameter name="deviceName" value="iPhone 6s" />
-        <parameter name="wdaLocalPort" value="10002" />
-        <parameter name="webkitDebugProxyPort" value="11002" />
-        <classes>
+<!--    <test name="iPhonexs">-->
+<!--        <listeners>-->
+<!--            <listener class-name="Listener.TestListener" />-->
+<!--        </listeners>-->
+<!--        <parameter name="platformName" value="iOS" />-->
+<!--        <parameter name="udid" value="d49d0add0cc8f3105fd2d50b0a9806ac487ade89" />-->
+<!--        <parameter name="deviceName" value="iPhone 6s" />-->
+<!--        <parameter name="wdaLocalPort" value="10002" />-->
+<!--        <parameter name="webkitDebugProxyPort" value="11002" />-->
+<!--        <classes>-->
 
-            <class name="Tests.LoginTests"/>
-        </classes>
-    </test>
+<!--            <class name="Tests.LoginTests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>
