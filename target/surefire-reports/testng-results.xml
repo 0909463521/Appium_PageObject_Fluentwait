@@ -5,15 +5,15 @@
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-15-32/LoginTests/sucessfulLogin.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-15-32/LoginTests/sucessfulLogin.png' height='400' width='400'/> </a>]]>
+      <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-57-01/LoginTests/sucessfulLogin.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-57-01/LoginTests/sucessfulLogin.png' height='400' width='400'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="25114" started-at="2021-06-15T13:15:32Z" finished-at="2021-06-15T13:15:58Z">
+  <suite name="Suite" duration-ms="22028" started-at="2021-06-15T13:57:01Z" finished-at="2021-06-15T13:57:23Z">
     <groups>
     </groups>
-    <test name="ANDROID BACH" duration-ms="25114" started-at="2021-06-15T13:15:32Z" finished-at="2021-06-15T13:15:58Z">
+    <test name="ANDROID BACH" duration-ms="22028" started-at="2021-06-15T13:57:01Z" finished-at="2021-06-15T13:57:23Z">
       <class name="Tests.LoginTests">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@7e2d773b]" name="beforeTest" is-config="true" duration-ms="15088" started-at="2021-06-15T13:15:32Z" finished-at="2021-06-15T13:15:47Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@42d8062c]" name="beforeTest" is-config="true" duration-ms="12437" started-at="2021-06-15T13:57:01Z" finished-at="2021-06-15T13:57:13Z">
           <params>
             <param index="0">
               <value>
@@ -59,15 +59,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Tests.LoginTests@7e2d773b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-06-15T13:15:47Z" finished-at="2021-06-15T13:15:47Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Tests.LoginTests@42d8062c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-06-15T13:57:13Z" finished-at="2021-06-15T13:57:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.LoginTests@7e2d773b]" name="beforeMethod" is-config="true" duration-ms="573" started-at="2021-06-15T13:15:47Z" finished-at="2021-06-15T13:15:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.LoginTests@42d8062c]" name="beforeMethod" is-config="true" duration-ms="544" started-at="2021-06-15T13:57:13Z" finished-at="2021-06-15T13:57:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTests@7e2d773b]" name="beforeMethod" is-config="true" duration-ms="192" started-at="2021-06-15T13:15:48Z" finished-at="2021-06-15T13:15:48Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTests@42d8062c]" name="beforeMethod" is-config="true" duration-ms="214" started-at="2021-06-15T13:57:14Z" finished-at="2021-06-15T13:57:14Z">
           <params>
             <param index="0">
               <value>
@@ -78,32 +78,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sucessfulLogin()[pri:0, instance:Tests.LoginTests@7e2d773b]" name="sucessfulLogin" duration-ms="6054" started-at="2021-06-15T13:15:48Z" finished-at="2021-06-15T13:15:54Z">
+        <test-method status="PASS" signature="sucessfulLogin()[pri:0, instance:Tests.LoginTests@42d8062c]" name="sucessfulLogin" duration-ms="5379" started-at="2021-06-15T13:57:14Z" finished-at="2021-06-15T13:57:19Z">
           <reporter-output>
             <line>
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-15-32/LoginTests/sucessfulLogin.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-15-32/LoginTests/sucessfulLogin.png' height='400' width='400'/> </a>]]>
+              <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-57-01/LoginTests/sucessfulLogin.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-06-15-20-57-01/LoginTests/sucessfulLogin.png' height='400' width='400'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- sucessfulLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@7e2d773b]" name="afterMethod" is-config="true" duration-ms="1191" started-at="2021-06-15T13:15:56Z" finished-at="2021-06-15T13:15:57Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@42d8062c]" name="afterMethod" is-config="true" duration-ms="1465" started-at="2021-06-15T13:57:21Z" finished-at="2021-06-15T13:57:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sucessfulLogin status=SUCCESS method=LoginTests.sucessfulLogin()[pri:0, instance:Tests.LoginTests@7e2d773b] output=This is the sample screenshot]]]>
+                <![CDATA[[TestResult name=sucessfulLogin status=SUCCESS method=LoginTests.sucessfulLogin()[pri:0, instance:Tests.LoginTests@42d8062c] output=This is the sample screenshot]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.LoginTests@7e2d773b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-15T13:15:56Z" finished-at="2021-06-15T13:15:56Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.LoginTests@42d8062c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-15T13:57:21Z" finished-at="2021-06-15T13:57:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.LoginTests@7e2d773b]" name="afterTest" is-config="true" duration-ms="398" started-at="2021-06-15T13:15:57Z" finished-at="2021-06-15T13:15:58Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.LoginTests@42d8062c]" name="afterTest" is-config="true" duration-ms="428" started-at="2021-06-15T13:57:22Z" finished-at="2021-06-15T13:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
