@@ -11,19 +11,25 @@ pipeline {
         NEW_VERSION = '1.3.0'
 
     }
-  
+    tools {
+        maven 'Maven 3.3.9' 
+        jdk 'jdk8'
+    }
     stages {
-        stage('init') {
+        stage('Prepare Environment') {
             steps {
                 script {
                     gv = load "script.groovy"
                 }
-                echo 'init..'
-                echo "environment ${env.NEW_VERSION}"
-               
+              sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                '''
+
+                
             }
         }
-        stage('Deploy') {
+        stage('Test') {
             steps {
                  script {
                     gv.deployApp()
