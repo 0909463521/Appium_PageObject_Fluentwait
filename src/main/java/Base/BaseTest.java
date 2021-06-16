@@ -280,6 +280,10 @@ public class BaseTest {
         waitForVisibility(element);
         return element.getAttribute(attribute);
     }
+    public void clear(MobileElement e) {
+        waitForVisibility(e);
+        e.clear();
+    }
 
 
 

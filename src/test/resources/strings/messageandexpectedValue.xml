@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <string name="success">Login Success</string>
+    <string name="invalid_userName">Wrong username and password</string>
+    <string name="invalid_passWord">Wrong username and password</string>
     <string name="product_title">PRODUCTS</string>
 </resources>

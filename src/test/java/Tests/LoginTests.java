@@ -44,37 +44,53 @@ public class LoginTests extends BaseTest {
     {
 
     }
-//    @Test
-//    public void invalidUserName() {
-//        loginPages.enterUserName(getDataBach().getJSONObject("invalidUser").getString("username"));
-//        loginPages.enterPassword(getDataBach().getJSONObject("invalidUser").getString("password"));
-//        loginPages.pressLoginBtn();
-//
-//
-//    }
+    @Test
+    public void invalidUserName() throws InterruptedException {
+        loginPages.enterUserName(getDataBach().getJSONObject("invalidUser").getString("username"));
+        loginPages.enterPassword(getDataBach().getJSONObject("invalidUser").getString("password"));
+        productsPage = loginPages.pressLoginBtn();
+
+
+        String actualProductTitle = productsPage.getTitle();
+        String expectedProductTitle = getStrings().get("invalid_userName");
+
+        Assert.assertEquals(actualProductTitle,expectedProductTitle);
+
+
+    }
+    @Test
+    public void invalidPassword() throws InterruptedException {
+        loginPages.enterUserName(getDataBach().getJSONObject("invalidPassword").getString("username"));
+        loginPages.enterPassword(getDataBach().getJSONObject("invalidPassword").getString("password"));
+        productsPage = loginPages.pressLoginBtn();
+
+        String actualProductTitle = productsPage.getTitle();
+        String expectedProductTitle = getStrings().get("invalid_passWord");
+
+        Assert.assertEquals(actualProductTitle,expectedProductTitle);
+
+
+    }
     @Test
     public void sucessfulLogin()
     {
         try{
             loginPages.enterUserName(getDataBach().getJSONObject("validUser").getString("username"));
             loginPages.enterPassword(getDataBach().getJSONObject("validUser").getString("password"));
-            loginPages.pressStandard_user();
+
             productsPage = loginPages.pressLoginBtn();
 
-//            System.out.println(getStrings().get("success"));
+            System.out.println(getStrings().get("success"));
             String actualProductTitle = productsPage.getTitle();
             String expectedProductTitle = getStrings().get("product_title");
 
-//            Assert.assertEquals(actualProductTitle,expectedProductTitle);
+            Assert.assertEquals(actualProductTitle,expectedProductTitle);
         }
         catch(Exception e)
         {
             e.printStackTrace();
 
         }
-
-
-
 
     }
 

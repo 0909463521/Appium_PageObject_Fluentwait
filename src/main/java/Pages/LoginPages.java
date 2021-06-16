@@ -22,17 +22,18 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 public class LoginPages extends BaseTest {
 //    MobileElement usernameTxtFld = (MobileElement) driver.fi
-    @AndroidFindBy (accessibility = "test-Username") private MobileElement usernameTxtFld;
-    @AndroidFindBy (accessibility = "test-Password") private MobileElement passwordTxtFld;
-    @AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-standard_user\"]/android.widget.TextView") private MobileElement btnstandard_;
-    @AndroidFindBy (accessibility = "test-LOGIN") private MobileElement loginBtn;
+    @AndroidFindBy (id = "userName") private MobileElement usernameTxtFld;
+    @AndroidFindBy (id = "passWord") private MobileElement passwordTxtFld;
+    @AndroidFindBy (id = "button") private MobileElement loginBtn;
 
 
     public LoginPages enterUserName(String username) {
+        clear(usernameTxtFld);
         sendKeys(usernameTxtFld,username);
         return this;
     }
     public LoginPages enterPassword(String password) {
+        clear(passwordTxtFld);
         sendKeys(passwordTxtFld,password);
         return this;
     }
@@ -41,10 +42,7 @@ public class LoginPages extends BaseTest {
         return new ProductsPage();
     }
 
-    public void pressStandard_user()
-    {
-        click(btnstandard_);
-    }
+
 
 
 
