@@ -33,8 +33,12 @@ pipeline {
             steps {
                  script {
                     gv.deployApp()
+                    gv.CopyAppToAutomation()
+                    gv.deployAutomationAppium()
+                    
                 }
             }
+            
         }
     }
 }
