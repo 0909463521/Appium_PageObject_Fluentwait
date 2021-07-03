@@ -1,131 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[This is the sample screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidPassword.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidPassword.png' height='400' width='400'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[This is the sample screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidUserName.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidUserName.png' height='400' width='400'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[This is the sample screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/sucessfulLogin.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/sucessfulLogin.png' height='400' width='400'/> </a>]]>
+    </line>
   </reporter-output>
-  <suite name="Tests.LoginTests" duration-ms="26" started-at="2021-06-15T14:34:59Z" finished-at="2021-06-15T14:35:00Z">
+  <suite name="Suite" duration-ms="37653" started-at="2021-07-03T05:54:31Z" finished-at="2021-07-03T05:55:09Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="26" started-at="2021-06-15T14:34:59Z" finished-at="2021-06-15T14:35:00Z">
+    <test name="ANDROID BACH" duration-ms="37653" started-at="2021-07-03T05:54:31Z" finished-at="2021-07-03T05:55:09Z">
       <class name="Tests.LoginTests">
-        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@3d921e20]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-06-15T14:34:59Z" finished-at="2021-06-15T14:34:59Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'platformName' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'platformName' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
-
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeTest" is-config="true" duration-ms="14157" started-at="2021-07-03T05:54:31Z" finished-at="2021-07-03T05:54:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[androidOnly]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R58MB0T56ZA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Any device name]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:Tests.LoginTests@3d921e20]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-07-03T05:54:45Z" finished-at="2021-07-03T05:54:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTests@3d921e20]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeMethod" is-config="true" duration-ms="715" started-at="2021-07-03T05:54:45Z" finished-at="2021-07-03T05:54:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:Tests.LoginTests@3d921e20]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeMethod" is-config="true" duration-ms="165" started-at="2021-07-03T05:54:46Z" finished-at="2021-07-03T05:54:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginTests.invalidPassword() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="sucessfulLogin()[pri:0, instance:Tests.LoginTests@3d921e20]" name="sucessfulLogin" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'platformName' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'platformName' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
-
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="invalidPassword()[pri:0, instance:Tests.LoginTests@27a5f880]" name="invalidPassword" duration-ms="5474" started-at="2021-07-03T05:54:46Z" finished-at="2021-07-03T05:54:52Z">
           <reporter-output>
+            <line>
+              <![CDATA[This is the sample screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidPassword.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidPassword.png' height='400' width='400'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-07-03T05:54:52Z" finished-at="2021-07-03T05:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterMethod" is-config="true" duration-ms="1021" started-at="2021-07-03T05:54:52Z" finished-at="2021-07-03T05:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidPassword status=SUCCESS method=LoginTests.invalidPassword()[pri:0, instance:Tests.LoginTests@27a5f880] output=This is the sample screenshot]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeMethod" is-config="true" duration-ms="668" started-at="2021-07-03T05:54:53Z" finished-at="2021-07-03T05:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeMethod" is-config="true" duration-ms="59" started-at="2021-07-03T05:54:54Z" finished-at="2021-07-03T05:54:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginTests.invalidUserName() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="invalidUserName()[pri:0, instance:Tests.LoginTests@27a5f880]" name="invalidUserName" duration-ms="5560" started-at="2021-07-03T05:54:54Z" finished-at="2021-07-03T05:55:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[This is the sample screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidUserName.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/invalidUserName.png' height='400' width='400'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidUserName -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterMethod" is-config="true" duration-ms="1011" started-at="2021-07-03T05:55:00Z" finished-at="2021-07-03T05:55:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidUserName status=SUCCESS method=LoginTests.invalidUserName()[pri:0, instance:Tests.LoginTests@27a5f880] output=This is the sample screenshot]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-07-03T05:55:00Z" finished-at="2021-07-03T05:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeMethod" is-config="true" duration-ms="676" started-at="2021-07-03T05:55:01Z" finished-at="2021-07-03T05:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:Tests.LoginTests@27a5f880]" name="beforeMethod" is-config="true" duration-ms="40" started-at="2021-07-03T05:55:02Z" finished-at="2021-07-03T05:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginTests.sucessfulLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sucessfulLogin()[pri:0, instance:Tests.LoginTests@27a5f880]" name="sucessfulLogin" duration-ms="4661" started-at="2021-07-03T05:55:02Z" finished-at="2021-07-03T05:55:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[This is the sample screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a href='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/sucessfulLogin.png'> <img src='/Users/bachvu/Desktop/PageObject/Screenshots/Android_Any device name/2021-07-03-12-54-31/LoginTests/sucessfulLogin.png' height='400' width='400'/> </a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- sucessfulLogin -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:Tests.LoginTests@3d921e20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterMethod" is-config="true" duration-ms="1014" started-at="2021-07-03T05:55:07Z" finished-at="2021-07-03T05:55:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sucessfulLogin status=SUCCESS method=LoginTests.sucessfulLogin()[pri:0, instance:Tests.LoginTests@27a5f880] output=This is the sample screenshot]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Tests.LoginTests@3d921e20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-07-03T05:55:07Z" finished-at="2021-07-03T05:55:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:Tests.LoginTests@3d921e20]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-06-15T14:35:00Z" finished-at="2021-06-15T14:35:00Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.LoginTests@27a5f880]" name="afterTest" is-config="true" duration-ms="409" started-at="2021-07-03T05:55:08Z" finished-at="2021-07-03T05:55:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- Tests.LoginTests -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Tests.LoginTests -->
+    </test> <!-- ANDROID BACH -->
+  </suite> <!-- Suite -->
 </testng-results>
